@@ -6,9 +6,12 @@ public class Sketch extends PApplet {
   /**
    * Called once at the beginning of execution, put your size all in this method
    */
+
+   
+
   public void settings() {
 	// put your size call here
-    size(400, 400);
+    size(500, 500);
   }
 
   /** 
@@ -16,7 +19,7 @@ public class Sketch extends PApplet {
    * values here i.e background, stroke, fill etc.
    */
   public void setup() {
-    background(210, 255, 173);
+    background(4, 156, 216);
   }
 
   /**
@@ -24,13 +27,22 @@ public class Sketch extends PApplet {
    */
   public void draw() {
 	  
-	// sample code, delete this stuff
-    stroke(128);
-    line(150, 25, 270, 350);  
+     //question block
 
-    stroke(255);
-    line(50, 125, 70, 50);  
+     
+     fill(206, 169, 0);
+     stroke(206, 169, 0);
+     rect(i + 300, i + 250, width/13, height/13);
+          
+     fill(112, 53, 0);
+     stroke(112, 53, 0);
+     rect(i + 290, i + 290, width/6, height/33);
+          
+     fill(255);
+     textSize(53);
+    text("?", i + 310, i + 285);
   }
   
-  // define other methods down here.
+  
+  float i = random(100);
 }
